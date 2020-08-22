@@ -113,7 +113,7 @@ class PlayerHead extends PluginBase implements Listener{
         $tag = $item->getCustomBlockData() ?? new CompoundTag();
         $tag->setTag($skinTag);
         $item->setCustomBlockData($tag);
-        $item->setCustomName("§r§6$name's Head");
+        $item->setCustomName("§r§9§lLamaflow§7»»§6 K§go§ep§6f§6 von§9 $name");
         return $item;
     }
 
