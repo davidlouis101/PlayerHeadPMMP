@@ -36,7 +36,7 @@ class PHCommand extends Command{
 		parent::__construct(
 			"playerhead",
 			"§9§lGebe dir einen Kopf",
-			"/playerhead <playerName>",
+			"/playerhead <playerName:string>",
 			["ph"]
 		);
 
