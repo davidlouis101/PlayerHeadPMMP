@@ -35,8 +35,8 @@ class PHCommand extends Command{
 	public function __construct(){
 		parent::__construct(
 			"playerhead",
-			"Give a player head",
-			"/playerhead <playerName:string>",
+			"§9§lGebe dir einen Kopf",
+			"/playerhead <playerName>",
 			["ph"]
 		);
 
@@ -55,7 +55,7 @@ class PHCommand extends Command{
 		$player = $sender->getServer()->getPlayer(implode(" ", $args));
 		if($player instanceof Player){
 			$sender->getInventory()->addItem(PlayerHead::getPlayerHeadItem(new Skin($player->getName(), $player->getSkin()->getSkinData())));
-			$sender->sendMessage("§8» §a{$player->getName()}'s head added in your inventory.");
+			$sender->sendMessage("§9§lLamaflow§7»» Der Kopf von {$player->getName()} wurde in deinen Inventar Hinzugefügt.");
 		}
 
 		return true;
