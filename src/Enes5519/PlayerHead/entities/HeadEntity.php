@@ -39,7 +39,7 @@ class HeadEntity extends Human{
     public $width = 0.5, $height = 0.6;
 
     protected function initEntity() : void{
-        $this->setMaxHealth(1);
+        $this->setMaxHealth(10);
         parent::initEntity();
         $this->setSkin(new Skin($this->skin->getSkinId(), $this->skin->getSkinData(), "", "geometry.player_head", self::HEAD_GEOMETRY));
     }
